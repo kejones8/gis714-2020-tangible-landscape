@@ -28,7 +28,7 @@ def run_contours(scanned_elev, env, **kwargs):
     interval = 5
     gs.run_command('r.contour', input=scanned_elev, output='contours', step=interval, flags='t', env=env)
 
-def LCP(scanned_elev, env, points=None, **kwargs):
+def run_LCP(scanned_elev, env, points=None, **kwargs):
     if not points:
         points = 'points'
         import analyses
