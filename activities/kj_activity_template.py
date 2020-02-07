@@ -85,14 +85,6 @@ def main():
     points = 'points'
     gs.write_command('v.in.ascii', flags='t', input='-', output=points, separator='comma',
                      stdin='638432,220382\n638621,220607')
-    print("Hello!")
-    LCP(scanned_elev=elev_resampled, env=None, points=points)
-
-
-    # create points
-    points = 'points'
-    gs.write_command('v.in.ascii', flags='t', input='-', output=points, separator='comma',
-                     stdin='638432,220382\n638621,220607')
     print("Hiya!")
     run_LCP(scanned_elev=elev_resampled, env=None, points=points)
 
